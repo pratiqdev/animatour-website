@@ -1,13 +1,17 @@
 {
   "name": "animatour-testing",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
+    "@popperjs/core": "^2.10.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "animatour": "/home/shlep/Documents/packages/animatour-0.0.613.tgz",
+    "gsap": "^3.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-popper": "^2.2.5",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
@@ -15,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "newv": "clear && yarn add ~/Documents/packages/animatour-0.0.$v.tgz && yarn start",
+    "tester": "echo $v"
   },
   "eslintConfig": {
     "extends": [
