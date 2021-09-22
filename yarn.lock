@@ -2233,13 +2233,13 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.npmjs.org/alphanum-sort/-/alphanum-sort-1.0.2.tgz"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
-animatour@/home/shlep/Documents/packages/animatour-0.0.613.tgz:
-  version "0.0.613"
-  resolved "/home/shlep/Documents/packages/animatour-0.0.613.tgz#46835cf6e54c6bfd33675cfb977a390af33e4f96"
+animatour@/home/shlep/Documents/packages/animatour-0.0.928.tgz:
+  version "0.0.928"
+  resolved "/home/shlep/Documents/packages/animatour-0.0.928.tgz#1e55e3e673ab9100039614623a4305e7ea1d0572"
 
-"animatour@file:../../../packages/animatour-0.0.612.tgz":
-  version "0.0.612"
-  resolved "file:../../../packages/animatour-0.0.612.tgz#941808125dee8f5ea1239051087b992b4868ed38"
+"animatour@file:../../../packages/animatour-0.0.927.tgz":
+  version "0.0.927"
+  resolved "file:../../../packages/animatour-0.0.927.tgz#51713170b7119b765855c5736097326fef600f8d"
 
 ansi-colors@^3.0.0:
   version "3.2.4"

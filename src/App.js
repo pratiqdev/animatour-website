@@ -10,19 +10,37 @@ import { animatour, Brochure } from 'animatour';
 
 
 
+const ModalTest = (props) => {
 
+  return(
+    <div>
+      <div style={{display: 'flex'}} >
+        <button onClick={props.close}>{props.closeLabel}</button>
+        <h2 style={{flex:1}}>{props.title}</h2>
+        <button onClick={props.prev}>{props.prevLabel}</button>
+        <button onClick={props.next}>{props.nextLabel}</button>
+      </div>
+      <div>{props.content}</div>
+      {/* <div>{props.data.activeStepData.title}</div> */}
+    </div>
+  )
+}
 
 function App() {
+
+  
   
   useEffect(()=>{
     animatour.newTour('Default Tour', {
       currentStep: 0,
+      modal: <ModalTest />,
       steps:[
         {
           title: 'START',
           element: '',
           content: 'start page - no element (index 0)',
           stepDuration: 3000,
+          transitionDuration: 3000,
         },
         {
           title: 'STEP 1',
@@ -78,7 +96,7 @@ function App() {
           title: 'STEP 7',
           element: '.step-7-element',
           content: 'Step Seven Content (index 7)',
-          stepDuration: 30000,
+          stepDuration: 3000,
           duration: 0, // should use this for moving elements
 
         },
@@ -104,10 +122,8 @@ function App() {
     <div style={{display: 'flex', flexDirection: 'column'}}>
 
 
-    <button onClick={()=>console.log(animatour.getAllTours())}>get all tours</button>
-    <button onClick={()=>console.log(animatour.open())}>open guide</button>
-    <button onClick={()=>animatour.open('Default Tour')}>open 'default tour'</button>
-    <button onClick={()=>animatour.open('Tour Two')}>open 'tour two'</button>
+    <button onClick={()=>animatour.start('Default Tour')}>open 'default tour'</button>
+    <button onClick={()=>animatour.start('Tour Two')}>open 'tour two'</button>
 
     <div className='step-1-element test'>step 1</div>
     <div className='step-2-element test'>step 2</div>
@@ -146,7 +162,7 @@ function App() {
         <p className='thang step-6-element test'>This is test area one (step 6)</p>
 
     <div className='rotating-box'>
-        <div className='step-7-element'>A moving element</div>
+        <div className='step-7-element test'>A moving element</div>
     </div>
 
       </div>
