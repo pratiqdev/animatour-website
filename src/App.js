@@ -15,8 +15,6 @@ return(
     <Router>
 
 
-
-
         <Switch>
           <Route exact path="/">
             <Home />
@@ -31,6 +29,10 @@ return(
 
           <Route path="/docs">
             <Docs />
+          </Route>
+
+          <Route path="/demos">
+            <h1>Demos</h1>
           </Route>
 
           <Route>
