@@ -2,8 +2,8 @@ import React from 'react'
 import { Route, Switch, BrowserRouter as Router  } from 'react-router-dom'
 
 import { ThemeProvider } from 'theme-ui'
-import theme from './theme'
-
+// import theme from './theme'
+import theme from './theme/Theme'
 import NoMatch from './pages/NoMatch'
 import Home from './pages/Home'
 import Docs from './pages/Docs'

@@ -14,8 +14,8 @@ const Codeblock = props => {
     }, [])
 
     return(
-        <pre className="hljs">
-            <code sx={{bg: 'g_1', borderRadius: 6}}
+        <pre className="hljs" sx={{bg: 'g_1', borderRadius: 3, p:2}}>
+            <code sx={{bg:'transparent'}}
                 className="javascript"
                 dangerouslySetInnerHTML={{ __html: html }}
             />
